@@ -95,9 +95,9 @@
 			bindings = <
 				&none		&kp LBKT	&kp DQT		&kp RBKT	&none						&kp QMARK	&kp PLUS	&kp MINUS	&kp UNDER	&kp NON_US_HASH
 				&none		&kp LPAR	&kp SQT		&kp RPAR	&none						&kp LT		&kp GT		&kp EQUAL	&kp EXCL 	&kp PIPE
-				&none		&kp	LBRC	&kp GRAVE	&kp RBRC	&none						&kp NON_US_BSLH	&kp TILDE	&kp STAR	&none		&kp SLASH
+				&none		&kp	LBRC	&kp GRAVE	&kp RBRC	&none						&kp NON_US_BSLH	&kp TILDE	&kp STAR	&none	&kp SLASH
 													&kp BSPC	&kp DEL						&none		&trans
-			>;j
+			>;
 		};
 
 /*
