@@ -26,42 +26,42 @@
         compatible = "zmk,combos";
 
 		combo_shift_l {
-			key_positions = <3 13>;
+			key-positions = <3 13>;
 			bindings = <&kp LSHIFT>;
 		};
 
 		combo_shift_r {
-			key_positions = <6 16>;
+			key-positions = <6 16>;
 			bindings = <&kp LSHIFT>;
 		};
 
 		combo_ctrl_l {
-			key_positions = <2 12>;
+			key-positions = <2 12>;
 			bindings = <&kp LCTRL>;
 		};
 
 		combo_ctrl_r {
-			key_positions = <7 17>;
+			key-positions = <7 17>;
 			bindings = <&kp LCTRL>;
 		};
 
 		combo_gui_l {
-			key_positions = <1 11>;
+			key-positions = <1 11>;
 			bindings = <&kp LGUI>;
 		};
 
 		combo_gui_r {
-			key_positions = <8 18>;
+			key-positions = <8 18>;
 			bindings = <&kp LGUI>;
 		};
 
 		combo_alt_l {
-			key_positions = <0 10>;
+			key-positions = <0 10>;
 			bindings = <&kp LALT>;
 		};
 
 		combo_alt_r {
-			key_positions = <9 19>;
+			key-positions = <9 19>;
 			bindings = <&kp LALT>;
 		};
 
