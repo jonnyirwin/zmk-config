@@ -59,7 +59,7 @@
 
 		combo_alt_l {
 			key-positions = <0 10>;
-			birndings = <&kp LALT>;
+			bindings = <&kp LALT>;
 		};
 
 		combo_alt_r {
