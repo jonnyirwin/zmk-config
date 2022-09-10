@@ -59,7 +59,7 @@
 
 		combo_alt_l {
 			key-positions = <0 10>;
-			bindings = <&kp LALT>;
+			birndings = <&kp LALT>;
 		};
 
 		combo_alt_r {
@@ -94,9 +94,9 @@
 		nav {
 			label = "NAV";
 			bindings = <
-				&caps_word	&kp N1		&kp N2		&kp N3		&none						&none		&none		&none		&none		&none
-				&none		&kp N4		&kp N5		&kp N6		&kp DOT						&kp LEFT	&kp DOWN	&kp UP		&kp RIGHT 	&none
-				&none		&kp	N7		&kp N8		&kp N9		&kp N0						&none		&none		&none		&none		&none
+				&kp N1		&kp N2		&kp N3		&kp N4		&kp N5						&kp N6		&kp	N7		&kp N8		&kp N9		&kp N0
+				&caps_word	&none		&none		&kp DOT		&none						&kp LEFT	&kp DOWN	&kp UP		&kp RIGHT 	&none
+				&kp LS(N1)	&kp LS(N2)	&kp LS(N3)	&kp LS(N4)	&kp LS(N5)					&kp LS(N6)	&kp	LS(N7)	&kp LS(N8)	&kp LS(N9)	&kp LS(N0)
 													&trans		&none						&kp TAB		&kp ESC
 			>;
 		};
