@@ -100,7 +100,7 @@
 													&trans		&none						&kp TAB		&kp ESC
 			>;
 		};
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~***&&&&~~~~~~~~~~~~~///@@@#####@@@//////~~~~\\\\\~~~~~\\\\\~~~~~~~~~\\\\\\~~~~~~~~
+
 		sym {
 			label = "SYM";
 			bindings = <
@@ -110,6 +110,7 @@
 												&kp LC(BSPC)	&kp DEL						&none		&trans
 			>;
 		};
+		
 		sys {
 			label = "SYS";
 			bindings = <
