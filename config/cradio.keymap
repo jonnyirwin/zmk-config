@@ -106,7 +106,7 @@
 			bindings = <
 				&kp LS(N5)	&kp LBKT	&kp LS(N2)	&kp RBKT	&kp STAR						&kp QMARK	&kp PLUS	&kp MINUS	&kp UNDER	&kp NON_US_HASH
 				&kp LS(N6)	&kp LPAR	&kp SQT		&kp RPAR	&kp	LS(N7)					&kp EXCL	&kp LT	&kp EQUAL	&kp GT 	&kp LS(SQT)
-				&kp LS(N4)	&kp	LBRC	&kp GRAVE	&kp RBRC	&kp LS(SLASH)				&kp NON_US_BSLH	&kp LS(NON_US_HASH)	&none	&kp LS(N3)	&kp SLASH
+				&kp LS(N4)	&kp	LBRC	&kp GRAVE	&kp RBRC	&kp LS(NON_US_BSLH)				&kp NON_US_BSLH	&kp LS(NON_US_HASH)	&none	&kp LS(N3)	&kp SLASH
 												&kp LC(BSPC)	&kp DEL						&none		&trans
 			>;
 		};
