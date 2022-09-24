@@ -104,7 +104,7 @@
 		sym {
 			label = "SYM";
 			bindings = <
-				&kp LS(N6)	&kp LBKT	&kp LS(N2)	&kp RBKT	&kp STAR						&kp QMARK	&kp PLUS	&kp MINUS	&kp UNDER	&kp NON_US_HASH
+				&kp LS(N6)	&kp LBKT	&kp LS(N2)	&kp RBKT	&kp STAR						&kp NON_US_HASH	&kp PLUS	&kp MINUS	&kp UNDER	&kp QMARK
 				&kp LS(N4)	&kp LPAR	&kp SQT		&kp RPAR	&kp	LS(N7)					  &kp LS(NON_US_HASH)	&kp LT	&kp EQUAL	&kp GT 	&kp LS(SQT)
 				&kp LS(N5)	&kp	LBRC	&kp GRAVE	&kp RBRC	&kp LS(NON_US_BSLH)		&kp NON_US_BSLH	&kp EXCL	&kp DOT	&kp LS(N3)	&kp SLASH
 												&kp LC(BSPC)	&kp DEL						&none		&trans
