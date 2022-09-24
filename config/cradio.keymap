@@ -95,7 +95,7 @@
 			label = "NAV";
 			bindings = <
 				&kp N1		&kp N2		&kp N3		&kp N4		&kp N5						&kp N6		&kp	N7		&kp N8		&kp N9		&kp N0
-				&caps_word	&none		&none		&kp DOT		&none						&kp LEFT	&kp DOWN	&kp UP		&kp RIGHT 	&none
+				&caps_word	&none		&kp COMMA		&kp DOT		&none						&kp LEFT	&kp DOWN	&kp UP		&kp RIGHT 	&none
 				&kp LS(N1)	&kp LS(N2)	&kp LS(N3)	&kp LS(N4)	&kp LS(N5)					&kp LS(N6)	&kp	LS(N7)	&kp LS(N8)	&kp LS(N9)	&kp LS(N0)
 													&trans		&none						&kp TAB		&kp ESC
 			>;
@@ -104,9 +104,9 @@
 		sym {
 			label = "SYM";
 			bindings = <
-				&kp LS(N5)	&kp LBKT	&kp LS(N2)	&kp RBKT	&kp STAR						&kp QMARK	&kp PLUS	&kp MINUS	&kp UNDER	&kp NON_US_HASH
-				&kp LS(N6)	&kp LPAR	&kp SQT		&kp RPAR	&kp	LS(N7)					&kp EXCL	&kp LT	&kp EQUAL	&kp GT 	&kp LS(SQT)
-				&kp LS(N4)	&kp	LBRC	&kp GRAVE	&kp RBRC	&kp LS(NON_US_BSLH)				&kp NON_US_BSLH	&kp LS(NON_US_HASH)	&none	&kp LS(N3)	&kp SLASH
+				&kp LS(N6)	&kp LBKT	&kp LS(N2)	&kp RBKT	&kp STAR						&kp QMARK	&kp PLUS	&kp MINUS	&kp UNDER	&kp NON_US_HASH
+				&kp LS(N4)	&kp LPAR	&kp SQT		&kp RPAR	&kp	LS(N7)					  &kp LS(NON_US_HASH)	&kp LT	&kp EQUAL	&kp GT 	&kp LS(SQT)
+				&kp LS(N5)	&kp	LBRC	&kp GRAVE	&kp RBRC	&kp LS(NON_US_BSLH)		&kp NON_US_BSLH	&kp EXCL	&kp DOT	&kp LS(N3)	&kp SLASH
 												&kp LC(BSPC)	&kp DEL						&none		&trans
 			>;
 		};
