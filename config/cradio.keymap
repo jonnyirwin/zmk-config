@@ -80,7 +80,7 @@
 		combo_esc {
 			key-positions = <16 26>;
 			bindings = <&kp ESC>;
-		}
+		};
     };
 
 	keymap {
