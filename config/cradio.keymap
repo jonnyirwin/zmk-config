@@ -76,6 +76,11 @@
 			key-positions = <30 33>;
 			bindings = <&mo SYS>;
 		};
+
+		combo_esc {
+			key-positions = <16 26>;
+			bindings = <&kp ESC>;
+		}
     };
 
 	keymap {
