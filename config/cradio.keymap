@@ -81,6 +81,11 @@
 			key-positions = <16 26>;
 			bindings = <&kp ESC>;
 		};
+
+		combo_esc {
+			key-positions = <5 15>
+			bindings = <&kp ESC>
+		}
     };
 
 	keymap {
