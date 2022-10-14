@@ -105,7 +105,7 @@
 
 		combo_end {
 			key-positions = <14 24>;
-,			bindings = <&kp END>;
+			bindings = <&kp END>;
 		};
     };
 
