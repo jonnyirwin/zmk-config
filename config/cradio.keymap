@@ -107,6 +107,11 @@
 			key-positions = <14 24>;
 			bindings = <&kp END>;
 		};
+
+		combo_tab {
+			key-positions = <4 14>;
+			bindings = <&kp TAB>;
+		};
     };
 
 	keymap {
