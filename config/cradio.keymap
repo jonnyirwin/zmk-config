@@ -116,7 +116,7 @@
 			combo_esc_thumb {
 				key-positions = <32 33>;
 				bindings = <&kp ESC>;
-			}
+			};
 
 		};
 
