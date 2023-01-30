@@ -113,9 +113,9 @@
 				bindings = <&kp TAB>;
 			};
 
-			combo_esc_thumb {
+			combo_tmux_prefix {
 				key-positions = <32 33>;
-				bindings = <&kp ESC>;
+				bindings = <&kp LC(A)>;
 			};
 
 		};
