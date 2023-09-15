@@ -79,7 +79,7 @@
 			};
 
 			combo_fnlayer {
-				key-positions = <19 29>;
+				key-positions = <32 29>;
 				bindings = <&mo FNS>;
 			};
 
@@ -166,9 +166,9 @@
 			fns {
 				label = "FNS";
 				bindings = <
-					&kp F1		&kp F2		&kp F3		&kp F4		&none						&none		&none		&none		&none		&none
-					&kp F9		&kp F10		&kp F11		&kp F12		&none						&none		&none		&none		&none		&none
-					&kp F5		&kp F6		&kp F7		&kp F8		&none						&none		&none		&none		&none		&none
+					&kp F1		&kp F2		&kp F3		&kp F4		&kp5						&none		&none		&none		&none		&none
+					&kp F6		&kp F7		&kp F8		&kp F9		&kp10						&none		&none		&none		&none		&none
+					&kp F11		&kp F12		&none			&none			&none						&none		&none		&none		&none		&none
 					&none		&none						&none		&none
 					>;
 			};            
