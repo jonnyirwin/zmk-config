@@ -123,7 +123,7 @@
 					>;
 			};
 
-			sym {kp
+			sym {
 				label = "SYM";
 				bindings = <
 					&kp LS(N6)	&kp LBKT	&kp LS(N2)	&kp RBKT	&kp NON_US_HASH					  &kp K	&kp PLUS	&kp MINUS	&kp UNDER	&kp QMARK
