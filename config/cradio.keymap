@@ -79,33 +79,13 @@
 			};
 
 			combo_fnlayer {
-				key-positions = <32 29>;
+				key-positions = <26 28>;
 				bindings = <&mo FNS>;
 			};
 
 			combo_esc {
 				key-positions = <5 15>;
 				bindings = <&kp ESC>;
-			};
-
-			combo_pg_dn {
-				key-positions = <16 26>;
-				bindings = <&kp PG_DN>;
-			};
-
-			combo_pg_up {
-				key-positions = <17 27>;
-				bindings = <&kp PG_UP>;
-			};
-
-			combo_home {
-				key-positions = <10 20>;
-				bindings = <&kp HOME>;
-			};
-
-			combo_end {
-				key-positions = <14 24>;
-				bindings = <&kp END>;
 			};
 
 			combo_tab {
@@ -136,19 +116,19 @@
 			nav {
 				label = "NAV";
 				bindings = <
-					&kp N1		&kp N2		&kp N3		&kp N4		&kp N5						&kp N6		&kp	N7		&kp N8		&kp N9		&kp N0
-					&caps_word	&none		&kp COMMA		&kp DOT		&none					&kp LEFT	&kp DOWN	&kp UP		&kp RIGHT 	&none
-					&kp LS(N1)	&kp LS(N2)	&kp LS(N3)	&kp LS(N4)	&kp LS(N5)					&kp LS(N6)	&kp	LS(N7)	&kp LS(N8)	&kp LS(N9)	&kp LS(N0)
-					&trans		&none						&kp TAB		&kp LS(INS)
+					&kp N1		 &kp N2		&kp N3		&kp N4		&kp N5						&kp N6		&kp	N7		 &kp N8		&kp N9		&kp N0
+					&caps_word &kp Z		&none		  &kp V		  &none					    &kp LEFT	&kp DOWN	 &kp UP		&kp RIGHT &none
+					&none	     &kp LS(N1)	&kp LS(N3)	&kp LS(N5)	&none					&none 	&kp	LS(N7) &kp LS(N8)	&none	&none
+					&trans		&none						&none		&none
 					>;
 			};
 
-			sym {
+			sym {kp
 				label = "SYM";
 				bindings = <
-					&kp LS(N6)	&kp LBKT	&kp LS(N2)	&kp RBKT	&kp STAR					&kp NON_US_HASH	&kp PLUS	&kp MINUS	&kp UNDER	&kp QMARK
-					&kp LS(N4)	&kp LPAR	&kp SQT		&kp RPAR	&kp	LS(N7)					&kp LS(NON_US_HASH)	&kp LT	&kp EQUAL	&kp GT 	&kp LS(SQT)
-					&kp LS(N5)	&kp	LBRC	&kp GRAVE	&kp RBRC	&kp LS(NON_US_BSLH)			&kp NON_US_BSLH	&kp EXCL	&kp DOT	&kp LS(N3)	&kp SLASH
+					&kp LS(N6)	&kp LBKT	&kp LS(N2)	&kp RBKT	&kp NON_US_HASH					  &kp K	&kp PLUS	&kp MINUS	&kp UNDER	&kp QMARK
+					&kp LS(N4)	&kp LPAR	&kp SQT		&kp RPAR	&kp	LS(NON_US_BSLH)					&kp LS(NON_US_HASH)	&kp LT	&kp EQUAL	&kp GT 	&kp LS(SQT)
+					&none				&kp	LBRC	&kp GRAVE	&kp RBRC	&none								        &none &kp NON_US_BSLH	&none	&kp SLASH &none
 					&kp LC(BSPC)	&kp DEL						&none		&trans
 					>;
 			};
@@ -168,7 +148,7 @@
 				bindings = <
 					&kp F1		&kp F2		&kp F3		&kp F4		&kp F5						&none		&none		&none		&none		&none
 					&kp F6		&kp F7		&kp F8		&kp F9		&kp F10						&none		&none		&none		&none		&none
-					&kp F11		&kp F12		&none			&none			&none							&none		&none		&none		&none		&none
+					&none     &kp F11		&kp F12		&kp F13		&none							&none		&none		&none		&none		&none
 					&none		&none						&none		&none
 					>;
 			};            
