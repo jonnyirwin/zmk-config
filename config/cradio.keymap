@@ -14,6 +14,10 @@
 #define SYS 3
 #define FNS 4
 
+&soft_off {
+	hold-time-ms = <5000>;
+};
+
 / { 
 
 
@@ -98,6 +102,10 @@
 				bindings = <&kp LC(A)>;
 			};
 
+			combo_soft_off {
+				key-positions = <10 19>;
+				bindings = <&soft_off>;
+			};
 		};
 
 		keymap {
