@@ -102,8 +102,13 @@
 				bindings = <&kp LC(A)>;
 			};
 
-			combo_soft_off {
-				key-positions = <10 19>;
+			combo_soft_off_l {
+				key-positions = <10 14>;
+				bindings = <&soft_off>;
+			};
+
+			combo_soft_off_r {
+				key-positions = <15 19>;
 				bindings = <&soft_off>;
 			};
 		};
