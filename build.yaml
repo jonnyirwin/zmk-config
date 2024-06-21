@@ -19,3 +19,5 @@ include:
     shield: cradio_right nicehatharry nice_view
   - board: seeeduino_xiao_rp2040
     shield: hummingbird
+  - board: seeeduino_xiao_ble
+    shield: hummingbird
