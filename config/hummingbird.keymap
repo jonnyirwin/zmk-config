@@ -101,45 +101,36 @@
 			};
 		};
 
-		behaviours {
-			fzs: fancy_zones_selector {
-				compatible = "zmk,behavior-tap-dance";
-				#binding-cells = <0>;
-				tapping-term-ms = <200>;
-				bindings = <&kp LG(PG_DN)>, <&kp LG(PG_UP)>;
-			};
-		};
+			keymap {
+					compatible = "zmk,keymap";
 
-    keymap {
-        compatible = "zmk,keymap";
+					default_layer {
+							display-name = "Cmk";
+							bindings = <
+									&kp Q      &kp W      &kp F       &kp P           &kp B        &kp J            &kp L          &kp U       &kp Y      &kp SEMI
+									&kp A      &kp R      &kp S       &kp T           &kp G        &kp M            &kp N          &kp E       &kp I      &kp O 
+														 &kp X      &kp C       &kp D                                         &kp H          &kp COMMA  &kp DOT
+																										&mo NAV         &kp SPACE    &kp RET          &mo SYM
+							>;
+					};
 
-        default_layer {
-						display-name = "Cmk";
-            bindings = <
-                &kp Q      &kp W      &kp F       &kp P           &kp B        &kp J            &kp L          &kp U       &kp Y      &kp SEMI
-							  &kp A      &kp R      &kp S       &kp T           &kp G        &kp M            &kp N          &kp E       &kp I      &kp O 
-                           &kp X      &kp C       &kp D                                         &kp H          &kp COMMA  &kp DOT
-                                                  &mo NAV         &kp SPACE    &kp RET          &mo SYM
-            >;
-        };
+					nav_layer {
+							display-name = "Nav";
+							bindings = <
 
-        nav_layer {
-            display-name = "Nav";
-            bindings = <
+									&kp N1		  &kp N2		  &kp N3		  &kp N4		  &kp N5						&kp N6		 &kp	N7		&kp N8		 &kp N9		  &kp N0
+									&caps_word	&kp Z		    &kp LC(C)		&kp V		    &kp LC(V)					&kp LEFT	 &kp DOWN	  &kp UP		 &kp RIGHT  &kp LG(LC(RIGHT))
+															&kp LS(N1)	&kp LS(N3)	&kp LS(N5)				                       &kp LS(N7)	&kp LS(N8) &kp LG(LC(LEFT))
+																											&trans		  &none						  &kp LG(LC(D))		   &none
+							>;
+					};
 
-						    &kp N1		  &kp N2		  &kp N3		  &kp N4		  &kp N5						&kp N6		 &kp	N7		&kp N8		 &kp N9		  &kp N0
-					      &caps_word	&kp Z		    &kp LC(C)		&kp V		    &kp LC(V)					&kp LEFT	 &kp DOWN	  &kp UP		 &kp RIGHT  &kp LG(LC(RIGHT))
-					                  &kp LS(N1)	&kp LS(N3)	&kp LS(N5)				                       &kp LS(N7)	&kp LS(N8) &kp LG(LC(LEFT))
-					                                          &trans		  &none						  &kp LG(LC(D))		   &none
-            >;
-        };
-
-        sym_layer {
-            display-name = "Sym";
-            bindings = <
-					      &kp LS(N6)	&kp LBKT	&kp LS(N2)	&kp RBKT	   &kp NON_US_HASH		             &kp K	             &kp PLUS	       &kp MINUS	&kp UNDER	 &kp QMARK
-					      &kp LS(N4)	&kp LPAR	&kp SQT		  &kp RPAR	   &kp LS(NON_US_BSLH)			       &kp LS(NON_US_HASH) &kp LT	         &kp EQUAL	&kp GT 	   &kp LS(SQT)
-					                  &kp	LBRC	&kp GRAVE	  &kp RBRC	                                                       &kp NON_US_BSLH &fzs	    &kp SLASH
+					sym_layer {
+							display-name = "Sym";
+							bindings = <
+									&kp LS(N6)	&kp LBKT	&kp LS(N2)	&kp RBKT	   &kp NON_US_HASH		             &kp K	             &kp PLUS	       &kp MINUS	&kp UNDER	 &kp QMARK
+									&kp LS(N4)	&kp LPAR	&kp SQT		  &kp RPAR	   &kp LS(NON_US_BSLH)			       &kp LS(NON_US_HASH) &kp LT	         &kp EQUAL	&kp GT 	   &kp LS(SQT)
+															&kp	LBRC	&kp GRAVE	  &kp RBRC	                                                       &kp NON_US_BSLH &none	    &kp SLASH
 					                                        &kp LC(BSPC) &kp DEL						 &none		           &trans
             >;
         };
