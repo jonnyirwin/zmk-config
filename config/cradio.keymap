@@ -135,7 +135,7 @@
 				bindings = <
 					&kp N1		 &kp N2		&kp N3		&kp N4		&kp N5						&kp N6		&kp	N7		 &kp N8		&kp N9		&kp N0
 					&caps_word &kp Z		&kp LC(C)	  &kp V		&kp LC(V)					    &kp LEFT	&kp DOWN	 &kp UP		&kp RIGHT &kp LG(LC(RIGHT))
-					&none	     &kp LS(N1)	&kp LS(N3)	&kp LS(N5)	&none					&none 	&kp	LS(N7) &kp LS(N8)	&LG(LC(LEFT))	&none
+					&none	     &kp LS(N1)	&kp LS(N3)	&kp LS(N5)	&none					&none 	&kp	LS(N7) &kp LS(N8)	&kp LG(LC(LEFT))	&none
 					&trans		&none						&none		&none
 					>;
 			};
