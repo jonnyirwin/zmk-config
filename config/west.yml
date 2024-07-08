@@ -13,5 +13,8 @@ manifest:
       remote: davidphilipbarr
       clone-depth: 1
       revision: main
+    - name: zmk-rgbled-widget
+      remote: caksoylar
+      revision: main
   self:
     path: config
