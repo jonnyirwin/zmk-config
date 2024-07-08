@@ -20,4 +20,4 @@ include:
   - board: seeeduino_xiao_rp2040
     shield: hummingbird
   - board: seeeduino_xiao_ble
-    shield: hummingbird
+    shield: hummingbird rgbled_adapter
