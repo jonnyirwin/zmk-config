@@ -16,15 +16,6 @@
 
 / { 
 
-	behaviors {
-        // the right side always turns off on press :/
-        soff: soft_off {
-            compatible = "zmk,behavior-soft-off";
-            #binding-cells = <0>;
-            // split-peripheral-off-on-press;
-            hold-time-ms = <2000>; // Only turn off it the key is held for 2 seconds or longer.
-        };
-    };
 /*           34 Keys
 ╭──────────────╮ ╭──────────────╮
 │ 0  1  2  3  4│ │ 5  6  7  8  9│
@@ -108,12 +99,12 @@
 
 			combo_soft_off_l {
 				key-positions = <10 14>;
-				bindings = <&soff>;
+				bindings = <&soft_off>;
 			};
 
 			combo_soft_off_r {
 				key-positions = <15 19>;
-				bindings = <&soff>;
+				bindings = <&soft_off>;
 			};
 		};
 
