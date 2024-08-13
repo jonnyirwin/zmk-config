@@ -2,21 +2,10 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: davidphilipbarr
-      url-base: https://github.com/davidphilipbarr
-    - name: caksoylar
-      url-base: https://github.com/caksoylar
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: nicehatharry
-      remote: davidphilipbarr
-      clone-depth: 1
-      revision: main
-    - name: zmk-rgbled-widget
-      remote: caksoylar
-      revision: main
   self:
     path: config

@@ -96,16 +96,6 @@
 				key-positions = <32 33>;
 				bindings = <&kp LC(A)>;
 			};
-
-			combo_soft_off_l {
-				key-positions = <10 14>;
-				bindings = <&soft_off>;
-			};
-
-			combo_soft_off_r {
-				key-positions = <15 19>;
-				bindings = <&soft_off>;
-			};
 		};
 
 		keymap {
@@ -114,9 +104,9 @@
 			base {
 				label = "BASE";
 				bindings = <
-					&kp Q		&kp W		&kp F		&kp P		&kp B						&kp J		&kp L		&kp U		&kp Y		&kp SEMI
-					&kp A		&kp R		&kp S		&kp T		&kp G						&kp M		&kp N		&kp E		&kp I		&kp O
-					&kp Z		&kp X		&kp C		&kp D		&kp V						&kp K		&kp H		&kp COMMA	&kp DOT		&kp SLASH 
+					&kp Q		&kp W		&kp E		&kp R		&kp T						&kp Y		&kp U		&kp I		&kp O		&kp P
+					&kp A		&kp S		&kp D		&kp F		&kp G						&kp H		&kp J		&kp K		&kp L		&kp SEMI
+					kp Z		&kp X		&kp C		&kp V		&kp B						&kp N		&kp M		&kp COMMA	&kp DOT		&kp SLASH 
 					&mo NAV		&kp SPACE					&kp RET		&mo SYM
 					>;
 			};
@@ -126,7 +116,7 @@
 				bindings = <
 					&kp N1		 &kp N2		&kp N3		&kp N4		&kp N5						&kp N6		&kp	N7		 &kp N8		&kp N9		&kp N0
 					&caps_word &kp Z		&kp LC(C)	  &kp V		&kp LC(V)					    &kp LEFT	&kp DOWN	 &kp UP		&kp RIGHT &kp LG(LC(RIGHT))
-					&none	     &kp LS(N1)	&kp LS(N3)	&kp LS(N5)	&none					&none 	&kp	LS(N7) &kp LS(N8)	&kp LG(LC(LEFT))	&none
+					&kp LS(N1) &kp LS(N2)	&kp LS(N3)	&kp LS(N4)	&kp LS(N5)					&kp LS(N6) 	&kp	LS(N7) &kp LS(N8)	&kp LG(LC(LEFT))	&none
 					&trans		&none						&none		&none
 					>;
 			};
