@@ -14,11 +14,6 @@
 #define SYS 3
 #define FNS 4
 
-&soft_off {
-    /delete-property/ split-peripheral-off-on-press;
-    hold-time-ms = <3000>;
-};
-
 / { 
 
 /*           34 Keys
@@ -101,16 +96,6 @@
 				key-positions = <32 33>;
 				bindings = <&kp LC(A)>;
 			};
-
-			combo_soft_off_l {
-				key-positions = <10 14>;
-				bindings = <&soft_off>;
-			};
-
-			combo_soft_off_r {
-				key-positions = <15 19>;
-				bindings = <&soft_off>;
-			};
 		};
 
 		keymap {
@@ -151,7 +136,7 @@
 				bindings = <
 					&bt BT_SEL 0	&bt BT_SEL 1	&bt BT_SEL 2	&bt BT_SEL 3	&bt BT_SEL 4		&bt BT_PRV	&none		&none		&none		&bt BT_CLR
 					&none		&none		&none		&none		&none					&bt BT_NXT		&none		&none		&none		&none
-					&sys_reset	&bootloader		&none		&none		&none						&none		&none		&none	&bootloader		&sys_reset												
+					&sys_reset	&bootloader		&none		&soft_off		&none						&none		&none		&none	&bootloader		&sys_reset												
 					&trans		&none						&none		&trans
 					>;
 			}; 
