@@ -14,6 +14,10 @@
 #define SYS 3
 #define FNS 4
 
+&soft_off {
+    split-peripheral-off-on-press;
+};
+
 / { 
 
 /*           30 Keys
