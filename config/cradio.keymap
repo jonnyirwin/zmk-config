@@ -102,6 +102,16 @@
 				key-positions = <32 33>;
 				bindings = <&kp LC(A)>;
 			};
+
+			combo_sys_left {
+				key-positions = <10 14>;
+				binding = <&mo SYS>;
+			};
+
+			combo_sys_right {
+				key-positions = <15 19>;
+				binding = <&mo SYS>;
+			};
 		};
 
 		keymap {
