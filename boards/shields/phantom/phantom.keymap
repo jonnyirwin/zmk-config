@@ -150,7 +150,7 @@
 				bindings = <
 					&bt BT_SEL 0	&bt BT_SEL 1	&bt BT_SEL 2	&bt BT_SEL 3	&bt BT_SEL 4		&bt BT_PRV	&none		&none		&none		&bt BT_CLR
 					&sys_reset		&bootloader		&none		&none		&none					&bt BT_NXT		&none		&none		&bootloader &sys_reset
-					              &none		&none		&soft_off									&none		&none	&none												
+					              &bt BT_CLR		&none		&soft_off									&none		&none	&none												
 					&trans		&none						&none		&trans
 					>;
 			}; 
