@@ -8,6 +8,8 @@ manifest:
       url-base: https://github.com/caksoylar
     - name: jonnyirwin
       url-base: https://github.com/jonnyirwin
+    - name: kilipan
+      url-base: https://github.com/kilipan
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -22,6 +24,8 @@ manifest:
       revision: main
     - name: zmk-keyboards-phantom
       remote: jonnyirwin
+    - name: zmk-keyboards-teenspirit
+      remote: kilipan
       revision: main
   self:
     path: config
