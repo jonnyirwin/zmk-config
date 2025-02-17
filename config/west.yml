@@ -14,7 +14,7 @@ manifest:
     - name: zmk
       remote: zmkfirmware
       revision: main
-      import: app/west.ymlrevision: main 
+      import: app/west.yml
     - name: nicehatharry
       remote: davidphilipbarr
       clone-depth: 1
