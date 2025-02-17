@@ -14,7 +14,7 @@ manifest:
     - name: zmk
       remote: zmkfirmware
       revision: main
-      import: app/west.yml
+      import: app/west.ymlrevision: main 
     - name: nicehatharry
       remote: davidphilipbarr
       clone-depth: 1
@@ -24,6 +24,7 @@ manifest:
       revision: main
     - name: zmk-keyboards-phantom
       remote: jonnyirwin
+      revision: main
     - name: zmk-keyboards-teenspirit
       remote: kilipan
       revision: main
