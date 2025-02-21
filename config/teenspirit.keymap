@@ -43,9 +43,9 @@
 
         colemak {
             bindings = <
-                &kp A    &kb R     &kb S     &kp T        &kp N    &kp E     &kp I     &kp O
+                &kp A    &kp R     &kp S     &kp T        &kp N    &kp E     &kp I     &kp O
                          &kp X     &kp C     &kp D        &kp H    &kp COMMA &kp DOT
-                                   &mo NUM   &kb SPACE    &kp RET  &mo SYM
+                                   &mo NUM   &kp SPACE    &kp RET  &mo SYM
             >;
         };
         numbers {
