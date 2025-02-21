@@ -57,7 +57,7 @@
         };
         symbols {
             bindings = <
-                &kp LS(N4)    &kp LPAR     &kp SQT     &kp RPAR        &kp LT    &kp EQUAL  &hr GT      &kp SEMI
+                &kp LS(N4)    &kp LPAR     &kp SQT     &kp RPAR        &kp LT    &kp EQUAL  &kp GT      &kp SEMI
                               &kp LBRC		 &kp LS(N2)  &kp RBRC        &kp H     &kp COMMA	&kp LS(SQT)
                                            &trans      &trans          &trans    &trans
             >;
