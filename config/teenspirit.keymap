@@ -140,7 +140,7 @@
 
         alpha1 {
             bindings = <
-                &kp A    &kp R     &kp S     &kp T        &kp N    &kp E     &kp I     &kp O
+                &kp A    &kp R     &kp S     &kp T        &kp N    &kp E     &iikp I     &kp O
                          &kp X     &kp C     &kp D        &kp H    &kp COMMA &kp DOT
                                    &lt NUM ESC   &lt AZ2 SPACE    &lt SM2 RET  &lt SM1 SEMI
             >;
@@ -176,7 +176,7 @@
         function {
             bindings = <
                 &kp F1    &kp F2     &kp F3     &kp F4        &kp F8    &kp F9  &kp F10      &kp F11
-                              &kp F5		 &kp F6  &kp F7        &kp F12 &kp F13	&none
+                              &kp F5		 &kp F6  &kp F7        &kp F12 &kp F13	&caps_word
                                            &trans      &trans          &trans    &trans
             >;
         };
