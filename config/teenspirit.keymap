@@ -133,6 +133,12 @@
 				bindings = <&kp LG(LC(LEFT))>;
 				layers = <AZ1>;
 			};
+
+			combo_tilde {
+				key-positions = <11 13>;
+				bindings = <&kp LS(NON_US_HASH)>;
+				layers = <SM1	SM2>;
+			};
 		};
 
     keymap {
