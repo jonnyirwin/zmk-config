@@ -54,25 +54,25 @@
 				key-positions = <2 3>;
 				bindings = <&kp G>;
 				layers = <AZ1>;
-			}
+			};
 
 			combo_m {
 				key-positions = <4 5>;
 				bindings = <&kp M>;
 				layers = <AZ1>;
-			}
+			};
 
 			combo_b {
 				key-positions = <2 3>;
 				bindings = <&kp B>;
 				layers = <AZ2>;
-			}
+			};
 
 			combo_j {
 				key-positions = <4 5>;
 				bindings = <&kp J>;
 				layers = <AZ2>;
-			}
+			};
 
 			combo_lshift {
 				key-positions = <3 10>;
