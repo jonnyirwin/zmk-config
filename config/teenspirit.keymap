@@ -140,7 +140,7 @@
 
         alpha1 {
             bindings = <
-                &kp A    &kp R     &kp S     &kp T        &kp N    &kp E     &iikp I     &kp O
+                &kp A    &kp R     &kp S     &kp T        &kp N    &kp E     &kp I     &kp O
                          &kp X     &kp C     &kp D        &kp H    &kp COMMA &kp DOT
                                    &lt NUM ESC   &lt AZ2 SPACE    &lt SM2 RET  &lt SM1 SEMI
             >;
