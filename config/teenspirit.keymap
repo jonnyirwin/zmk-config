@@ -2,10 +2,13 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#define CMK 0
-#define NUM 1
-#define SYM 2
-#define SYS 3
+#define AZ1 0
+#define AZ2 1
+#define NUM 2
+#define SM1 3
+#define SM2 4
+#define FUN 5
+#define SYS 6
 
 //  _______________________  _______________________
 // |  0  |  1  |  2  |  3  \/   4 |   5 |   6 |   7 |
@@ -22,30 +25,131 @@
 				bindings = <&kp BSPC>;
 			};
 
+			combo_tmux {
+				key-positions = <16 17>;
+				bindings = <&kp LC(A)>;
+			};
+
 			combo_esc {
-				key-positions = <4 11>;
+				key-positions = <4 6>;
 				bindings = <&kp ESC>;
 			};
 
 			combo_tab {
-				key-positions = <3 10>;
+				key-positions = <1 3>;
 				bindings = <&kp TAB>;
+			};
+			
+			combo_fn {
+				key-positions = <15 16>;
+				bindings = <&mo FUN>;
 			};
 
 			combo_sys {
 				key-positions = <14 17>;
 				bindings = <&mo SYS>;
 			};
+
+			combo_g {
+				key-positions = <2 3>;
+				bindings = <&kp G>;
+				layers = <AZ1>;
+			}
+
+			combo_m {
+				key-positions = <4 5>;
+				bindings = <&kp M>;
+				layers = <AZ1>;
+			}
+
+			combo_b {
+				key-positions = <2 3>;
+				bindings = <&kp B>;
+				layers = <AZ2>;
+			}
+
+			combo_j {
+				key-positions = <4 5>;
+				bindings = <&kp J>;
+				layers = <AZ2>;
+			}
+
+			combo_lshift {
+				key-positions = <3 10>;
+				bindings = <&kp LSHIFT>;
+				layers = <AZ1 AZ2>;
+			};
+
+			combo_lctrl {
+				key-positions = <2 9>;
+				bindings = <&kp LCTRL>;
+				layers = <AZ1 AZ2>;
+			};
+
+			combo_lgui {
+				key-positions = <1 8>;
+				bindings = <&kp LGUI>;
+				layers = <AZ1 AZ2>;
+			};
+
+			combo_rshift {
+				key-positions = <4 11>;
+				bindings = <&kp RSHIFT>;
+				layers = <AZ1 AZ2>;
+			};
+
+			combo_rctrl {
+				key-positions = <5 12>;
+				bindings = <&kp RCTRL>;
+				layers = <AZ1 AZ2>;
+			};
+
+			combo_rgui {
+				key-positions = <6 13>;
+				bindings = <&kp RGUI>;
+				layers = <AZ1 AZ2>;
+			};
+
+			combo_lt {
+				key-positions = <4 11>;
+				bindings = <&kp LT>;
+				layers = <SM1>;
+			};
+
+			combo_gt {
+				key-positions = <6 13>;
+				bindings = <&kp GT>;
+				layers = <SM1>;
+			};
+
+			combo_nxt {
+				key-positions = <6 11>;
+				bindings = <&kp LG(LC(RIGHT))>;
+				layers = <AZ1>;
+			};
+
+			combo_prv {
+				key-positions = <1 10>;
+				bindings = <&kp LG(LC(LEFT))>;
+				layers = <AZ1>;
+			};
 		};
 
     keymap {
         compatible = "zmk,keymap";
 
-        colemak {
+        alpha1 {
             bindings = <
                 &kp A    &kp R     &kp S     &kp T        &kp N    &kp E     &kp I     &kp O
                          &kp X     &kp C     &kp D        &kp H    &kp COMMA &kp DOT
-                                   &mo NUM   &kp SPACE    &kp RET  &mo SYM
+                                   &lt NUM ESC   &lt AZ2 SPACE    &lt SM2 RET  &lt SM1 SEMI
+            >;
+        };
+        alpha2 {
+            bindings = <
+                &kp Q    &kp W     &kp F     &kp P        &kp L    &kp U     &kp Y    &kp SEMI 
+                         &kp Z     &none     &kp V        &kp K    &kp NON_US_BSLH &kp SLASH
+                                   &trans    &trans    &trans  &trans
             >;
         };
         numbers {
@@ -55,14 +159,28 @@
                                   &trans     &trans        &trans   &trans
             >;
         };
-        symbols {
+        symbols1 {
             bindings = <
-                &kp LS(N4)    &kp LPAR     &kp SQT     &kp RPAR        &kp LT    &kp EQUAL  &kp GT      &kp SEMI
-                              &kp LBRC		 &kp LS(N2)  &kp RBRC        &kp H     &kp COMMA	&kp LS(SQT)
+                &kp LS(N4)    &kp LPAR     &kp SQT     &kp RPAR        &kp PLUS    &kp MINUS  &kp UNDER  &kp QMARK
+                              &kp LBRC		 &kp LS(N2)   &kp RBRC        &kp NON_US_HASH &kp EQUAL	&kp LS(SQT)
                                            &trans      &trans          &trans    &trans
             >;
         };
-        bluetooth {
+        symbols2 {
+            bindings = <
+                &kp LS(N6)    &kp LBKT     &kp GRAVE   &kp RBKT              &sk LSHIFT &sk LCTRL  &sk LGUI  &sk LALT
+                              &kp LS(N1)	 &kp LS(N5)  &kp LS(NON_US_BSLH)   &kp LS(N5) &kp LS(N7)	&kp LS(N8)
+                                           &trans      &trans                &trans    &trans
+            >;
+        };
+        function {
+            bindings = <
+                &kp F1    &kp F2     &kp F3     &kp F4        &kp F8    &kp F9  &kp F10      &kp F11
+                              &kp F5		 &kp F6  &kp F7        &kp F12 &kp F13	&none
+                                           &trans      &trans          &trans    &trans
+            >;
+        };
+        system {
             bindings = <
                 &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3        &bt BT_SEL 4  &none  &bootloader  &sys_reset
                               &bt BT_CLR   &bt BT_PRV    &bt BT_NXT          &none         &none  &none
