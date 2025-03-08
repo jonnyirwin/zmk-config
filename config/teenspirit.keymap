@@ -74,42 +74,6 @@
 				layers = <AZ2>;
 			};
 
-			combo_lshift {
-				key-positions = <3 10>;
-				bindings = <&kp LSHIFT>;
-				layers = <AZ1 AZ2>;
-			};
-
-			combo_lctrl {
-				key-positions = <2 9>;
-				bindings = <&kp LCTRL>;
-				layers = <AZ1 AZ2>;
-			};
-
-			combo_lgui {
-				key-positions = <1 8>;
-				bindings = <&kp LGUI>;
-				layers = <AZ1 AZ2>;
-			};
-
-			combo_rshift {
-				key-positions = <4 11>;
-				bindings = <&kp RSHIFT>;
-				layers = <AZ1 AZ2>;
-			};
-
-			combo_rctrl {
-				key-positions = <5 12>;
-				bindings = <&kp RCTRL>;
-				layers = <AZ1 AZ2>;
-			};
-
-			combo_rgui {
-				key-positions = <6 13>;
-				bindings = <&kp RGUI>;
-				layers = <AZ1 AZ2>;
-			};
-
 			combo_lt {
 				key-positions = <4 11>;
 				bindings = <&kp LT>;
@@ -153,7 +117,7 @@
         };
         alpha2 {
             bindings = <
-                &kp Q    &kp W     &kp F     &kp P        &kp L    &kp U     &kp Y    &kp SEMI 
+                &kp Q    &kp W     &kp F     &kp P        &kp L    &kp U     &kp Y    &kp LS(SEMI) 
                          &kp Z     &none     &kp V        &kp K    &kp NON_US_BSLH &kp SLASH
                                    &trans    &trans    &trans  &trans
             >;
