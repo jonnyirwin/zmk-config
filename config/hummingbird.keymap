@@ -24,16 +24,7 @@
                 20  21  22             23  24  25
                         26  27     28  29              */
 
-	
 
-    behaviours {
-		  td0: tap_dance_0 {
-				compatible = "zmk,behavior-tap-dance";
-				#binding-cells = <0>;
-				tapping-term-ms = <200>;
-				bindings = <&kp E>, <&kp>;
-			};
-		};
 
 		combos {
 			compatible = "zmk,combos";
@@ -116,7 +107,7 @@
 							display-name = "Cmk";
 							bindings = <
 									&kp Q      &kp W      &kp F       &kp P           &kp B        &kp J            &kp L          &kp U       &kp Y      &kp SEMI
-									&kp A      &kp R      &kp S       &kp T           &kp G        &kp M            &kp N          &td0        &kp I      &kp O 
+									&kp A      &kp R      &kp S       &kp T           &kp G        &kp M            &kp N          &kp E       &kp I      &kp O 
 														 &kp X      &kp C       &kp D                                         &kp H          &kp COMMA  &kp DOT
 																										&mo NAV         &kp SPACE    &kp RET          &mo SYM
 							>;
