@@ -6,7 +6,6 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
 
 #define CK 0
 #define NAV 1
@@ -26,6 +25,15 @@
                         26  27     28  29              */
 
 	
+
+    behaviours {
+		  td0: tap_dance_0 {
+				compatible = "zmk,behavior-tap-dance";
+				#binding-cells = <0>;
+				tapping-term-ms = <200>;
+				bindings = <&kp E>, <&kp>;
+			};
+		};
 
 		combos {
 			compatible = "zmk,combos";
@@ -108,7 +116,7 @@
 							display-name = "Cmk";
 							bindings = <
 									&kp Q      &kp W      &kp F       &kp P           &kp B        &kp J            &kp L          &kp U       &kp Y      &kp SEMI
-									&kp A      &kp R      &kp S       &kp T           &kp G        &kp M            &kp N          &kp E       &kp I      &kp O 
+									&kp A      &kp R      &kp S       &kp T           &kp G        &kp M            &kp N          &td0        &kp I      &kp O 
 														 &kp X      &kp C       &kp D                                         &kp H          &kp COMMA  &kp DOT
 																										&mo NAV         &kp SPACE    &kp RET          &mo SYM
 							>;
@@ -148,10 +156,10 @@
 				sys_layer {
 					display-name = "Sys";
 					bindings = <
-						&bt BT_SEL 0 &bt BT_SEL 1	&bt BT_SEL 2	&bt BT_SEL 3	&bt BT_SEL 4			&bt BT_PRV &none &none &none &bt BT_CLR
-						&none	&none &none	&none	&none																							&bt BT_NXT &none &none &bootloader &sys_reset
-									&none	&none	&none								&none	&none	&none
-													    &trans	&none		&none	&trans
+            &none	&none &none	&none	&none             &none	&none &none	&none	&none
+						&none	&none &none	&none	&none							&none &none &none &bootloader &sys_reset
+									&none	&none	&none								          &none	&none	&none
+													    &trans	&none		        &none	&trans
 					>;
 				};
     };
