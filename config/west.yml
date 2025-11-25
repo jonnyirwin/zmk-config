@@ -10,6 +10,8 @@ manifest:
       url-base: https://github.com/jonnyirwin
     - name: kilipan
       url-base: https://github.com/kilipan
+    - name: jcmkk3
+      url-base: https://github.com/jcmkk3
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -27,6 +29,9 @@ manifest:
       revision: main
     - name: zmk-keyboards-teenspirit
       remote: kilipan
+      revision: main
+    - name: zmk-keyboard-berylline
+      remote: jcmkk3
       revision: main
   self:
     path: config

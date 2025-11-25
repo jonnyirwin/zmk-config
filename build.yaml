@@ -27,3 +27,8 @@ include:
     shield: teenspirit rgbled_adapter
   - board: nice_nano_v2
     shield: settings_reset
+  - board: nice_nano_v2 
+    shield: berylline_left
+  - board: nice_nano_v2 
+    shield: berylline_right
+   
