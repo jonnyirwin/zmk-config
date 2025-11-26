@@ -26,9 +26,6 @@
                         26  27     28  29              */
 
 	
-    chosen {
-	    zmk,kscan = &kscan_facedown;
-		};
 
 		combos {
 			compatible = "zmk,combos";
