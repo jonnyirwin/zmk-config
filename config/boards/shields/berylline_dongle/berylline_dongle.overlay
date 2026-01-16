@@ -1,9 +1,9 @@
 / {
     chosen {
-        zmk,kscan = &mock_kscan;
+        zmk,kscan = &kscan_facedown;
     };
 
-    mock_kscan: mock_kscan {
+    mock_kscan: kscan_facedown {
         compatible = "zmk,kscan-mock";
         columns = <0>;
         rows = <0>;
