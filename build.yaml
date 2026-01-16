@@ -33,4 +33,6 @@ include:
     shield: berylline_left
   - board: nice_nano_v2 
     shield: berylline_right
+  - board: nice_nano_v2 
+    shield: berylline_dongle prospector_adapter
    

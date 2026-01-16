@@ -12,10 +12,12 @@ manifest:
       url-base: https://github.com/kilipan
     - name: jcmkk3
       url-base: https://github.com/jcmkk3
+    - name: carrefinho
+      url-base: https://github.com/carrefinho
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: v0.3-branch
       import: app/west.yml
     - name: nicehatharry
       remote: davidphilipbarr
@@ -32,6 +34,9 @@ manifest:
       revision: main
     - name: zmk-keyboard-berylline
       remote: jcmkk3
+      revision: main
+    - name: prospector-zmk-module
+      remote: carrefinho
       revision: main
   self:
     path: config
