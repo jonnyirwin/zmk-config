@@ -3,7 +3,7 @@
         zmk,kscan = &kscan_facedown;
     };
 
-    mock_kscan: kscan_facedown {
+    kscan_facedown: kscan_facedown {
         compatible = "zmk,kscan-mock";
         columns = <0>;
         rows = <0>;
