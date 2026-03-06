@@ -1,0 +1,74 @@
+/*
+ * Unified combo definitions — shared by all board sizes.
+ * Requires key_positions.h to be included first (via base_layers.dtsi).
+ */
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+
+        /* ── Modifier combos ─────────────────────────────────────── */
+        combo_shift_l {
+            key-positions = <LT3 LM3>;
+            bindings = <&kp LSHIFT>;
+        };
+        combo_shift_r {
+            key-positions = <RT3 RM3>;
+            bindings = <&kp LSHIFT>;
+        };
+        combo_ctrl_l {
+            key-positions = <LT2 LM2>;
+            bindings = <&kp LCTRL>;
+        };
+        combo_ctrl_r {
+            key-positions = <RT2 RM2>;
+            bindings = <&kp LCTRL>;
+        };
+        combo_gui_l {
+            key-positions = <LT1 LM1>;
+            bindings = <&kp LGUI>;
+        };
+        combo_gui_r {
+            key-positions = <RT1 RM1>;
+            bindings = <&kp LGUI>;
+        };
+        combo_alt_l {
+            key-positions = <LT0 LM0>;
+            bindings = <&kp LALT>;
+        };
+        combo_alt_r {
+            key-positions = <RT0 RM0>;
+            bindings = <&kp LALT>;
+        };
+
+        /* ── Action combos ───────────────────────────────────────── */
+        combo_esc {
+            key-positions = <RT4 RM4>;
+            bindings = <&kp ESC>;
+        };
+        combo_tab {
+            key-positions = <LT4 LM4>;
+            bindings = <&kp TAB>;
+        };
+        combo_bspc {
+            key-positions = <LH1 LH0>;
+            bindings = <&kp BSPC>;
+        };
+        combo_tmux {
+            key-positions = <RH0 RH1>;
+            bindings = <&kp LC(A)>;
+        };
+
+        /* ── Layer combos ────────────────────────────────────────── */
+        combo_fn {
+            /* RB2 = K (inner right bottom), RB0 = / (outer right bottom) */
+            key-positions = <RB2 RB0>;
+            bindings = <&mo FN>;
+        };
+        combo_sys {
+            /* Both NAV thumbs held together */
+            key-positions = <LH1 RH1>;
+            bindings = <&mo SYS>;
+        };
+    };
+};

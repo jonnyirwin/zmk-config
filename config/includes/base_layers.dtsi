@@ -1,0 +1,43 @@
+/*
+ * Unified ZMK keymap skeleton — included by each board's .keymap file.
+ *
+ * The including file must define before this #include:
+ *   - BOARD_30 / BOARD_34 / BOARD_36 / BOARD_42
+ *   - Layer index macros: CK, NAV, SYM, FN, SYS
+ *   - Layer binding macros: LAYER_CK, LAYER_NAV, LAYER_SYM, LAYER_FN, LAYER_SYS
+ *     (each expands to the raw list of &kp / &mo / &bt bindings for that board)
+ */
+
+#include "key_positions.h"
+#include "combos.dtsi"
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            display-name = "CK";
+            bindings = < LAYER_CK >;
+        };
+
+        nav_layer {
+            display-name = "Nav";
+            bindings = < LAYER_NAV >;
+        };
+
+        sym_layer {
+            display-name = "Sym";
+            bindings = < LAYER_SYM >;
+        };
+
+        fn_layer {
+            display-name = "Fn";
+            bindings = < LAYER_FN >;
+        };
+
+        sys_layer {
+            display-name = "Sys";
+            bindings = < LAYER_SYS >;
+        };
+    };
+};
