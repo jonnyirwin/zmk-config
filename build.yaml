@@ -21,6 +21,8 @@ include:
     shield: phantom_left nicehatharry nice_view
   - board: nice_nano//zmk
     shield: phantom_right nicehatharry nice_view
+  - board: waveshare_rp2040_zero
+    shield: cheapino
   - board: xiao_rp2040//zmk
     shield: hummingbird
   - board: xiao_ble//zmk
