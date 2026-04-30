@@ -8,41 +8,43 @@
 # shield: [ "corne_left", "corne_right" ]
 # include:
 #   - board: bdn9_rev2
-#   - board: nice_nano_v2
+#   - board: nice_nano//zmk
 #     shield: reviung41
 #
 ---
 include:
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: cradio_left nicehatharry nice_view
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: cradio_right nicehatharry nice_view
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: phantom_left nicehatharry nice_view
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: phantom_right nicehatharry nice_view
-  - board: seeeduino_xiao_rp2040
+  - board: xiao_rp2040//zmk
     shield: hummingbird
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble//zmk
     shield: hummingbird rgbled_adapter
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble//zmk
     shield: teenspirit rgbled_adapter
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: settings_reset
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble//zmk
     shield: settings_reset
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: berylline_left
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-  - board: nice_nano_v2
+    artifact-name: berylline_left_dongle
+  - board: nice_nano//zmk
     shield: berylline_right
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-  - board: seeeduino_xiao_ble
+    artifact-name: berylline_right_dongle
+  - board: xiao_ble//zmk
     shield: berylline_dongle prospector_adapter
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: berylline_left
-  - board: nice_nano_v2
+    artifact-name: berylline_left_standalone
+  - board: nice_nano//zmk
     shield: berylline_right
-  - board: waveshare_rp2040_zero
-    shield: cheapino
+    artifact-name: berylline_right_standalone
 

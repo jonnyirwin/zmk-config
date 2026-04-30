@@ -15,47 +15,8 @@
 
 #define BOARD_34
 
-/* ── CK (Colemak base) ────────────────────────────────────────────────────── */
-#define LAYER_CK \
-    &kp Q       &kp W       &kp F       &kp P       &kp B       \
-    &kp J       &kp L       &kp U       &kp Y       &kp SEMI    \
-    &kp A       &kp R       &kp S       &kp T       &kp G       \
-    &kp M       &kp N       &kp E       &kp I       &kp O       \
-    &kp Z       &kp X       &kp C       &kp D       &kp V       \
-    &kp K       &kp H       &kp COMMA   &kp DOT     &kp SLASH   \
-                &mo NAV     &kp SPACE   &kp RET     &mo SYM
+#include "includes/layers.h"
 
-/* ── NAV ──────────────────────────────────────────────────────────────────── */
-#define LAYER_NAV \
-    &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      \
-    &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      \
-    &caps_word  &kp Z       &kp LC(C)   &kp V       &kp LC(V)   \
-    &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp LG(LC(RIGHT)) \
-    &none       &kp LS(N1)  &kp LS(N3)  &kp LS(N5)  &none       \
-    &none       &kp LS(N7)  &kp LS(N8)  &kp LG(LC(LEFT)) &none  \
-                &trans      &none       &none       &none
-
-/* ── SYM ──────────────────────────────────────────────────────────────────── */
-#define LAYER_SYM \
-    &kp LS(N6)  &kp LBKT    &kp LS(N2)  &kp RBKT    &kp NON_US_HASH     \
-    &kp K       &kp PLUS    &kp MINUS   &kp UNDER   &kp QMARK            \
-    &kp LS(N4)  &kp LPAR    &kp SQT     &kp RPAR    &kp LS(NON_US_BSLH) \
-    &kp LS(NON_US_HASH) &kp LT &kp EQUAL &kp GT     &kp LS(SQT)         \
-    &none       &kp LBRC    &kp GRAVE   &kp RBRC    &none                \
-    &none       &kp NON_US_BSLH &none   &kp SLASH   &none               \
-                &kp LC(BSPC) &kp DEL    &none       &trans
-
-/* ── FN ───────────────────────────────────────────────────────────────────── */
-#define LAYER_FN \
-    &kp F1      &kp F2      &kp F3      &kp F4      &kp F5      \
-    &none       &none       &none       &none       &none        \
-    &kp F6      &kp F7      &kp F8      &kp F9      &kp F10     \
-    &none       &none       &none       &none       &none        \
-    &none       &kp F11     &kp F12     &kp F13     &none        \
-    &none       &none       &none       &none       &none        \
-                &none       &none       &none       &none
-
-/* ── SYS ──────────────────────────────────────────────────────────────────── */
 #define LAYER_SYS \
     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 \
     &bt BT_PRV &none       &none       &none       &bt BT_CLR           \
