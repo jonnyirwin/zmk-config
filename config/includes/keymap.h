@@ -157,6 +157,8 @@
 #define SYM_RB5  &none
 
 /* ── MOUSE ────────────────────────────────────────────────────────────────── */
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 20
 #include <dt-bindings/zmk/mouse.h>
 
 #define MOUSE_LT4  &trans
