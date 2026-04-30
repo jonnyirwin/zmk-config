@@ -46,13 +46,10 @@ jobs:
           keymap parse -z config/berylline.keymap -o /tmp/berylline.yaml
           keymap draw /tmp/berylline.yaml -o berylline_keymap.svg
 
-          # hummingbird wired (rp2040) — 30-key unibody (layout known)
-          keymap parse -z config/boards/seeeduino_xiao_rp2040/hummingbird.keymap -o /tmp/hummingbird_wired.yaml
-          keymap draw /tmp/hummingbird_wired.yaml -o hummingbird_wired_keymap.svg
-
-          # hummingbird wireless (ble) — 30-key unibody (layout known)
-          keymap parse -z config/boards/seeeduino_xiao_ble/hummingbird.keymap -o /tmp/hummingbird_wireless.yaml
-          keymap draw /tmp/hummingbird_wireless.yaml -o hummingbird_wireless_keymap.svg
+          # hummingbird — 30-key unibody (both variants share the same keymap)
+          keymap parse -z config/hummingbird.keymap -o /tmp/hummingbird.yaml
+          keymap draw /tmp/hummingbird.yaml -o hummingbird_wired_keymap.svg
+          cp hummingbird_wired_keymap.svg hummingbird_wireless_keymap.svg
 
       - name: Commit updated SVGs
         run: |
