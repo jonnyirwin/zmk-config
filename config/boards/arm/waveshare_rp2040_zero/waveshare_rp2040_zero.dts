@@ -1,6 +1,6 @@
 /dts-v1/;
 
-#include <rpi_pico/rp2040.dtsi>
+#include <raspberrypi/rpi_pico/rp2040.dtsi>
 #include "waveshare_rp2040_zero_pinctrl.dtsi"
 #include <freq.h>
 #include <zephyr/dt-bindings/i2c/i2c.h>
