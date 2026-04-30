@@ -53,8 +53,12 @@
 #define CK_RH1   &mo SYM
 #define CK_RH2   &kp LC(A)
 
-#define CK_LX0   &none
-#define CK_RX0   &none
+#define CK_LT5   &none
+#define CK_LM5   &none
+#define CK_LB5   &none
+#define CK_RT5   &none
+#define CK_RM5   &none
+#define CK_RB5   &none
 
 /* ── NAV ──────────────────────────────────────────────────────────────────── */
 #define NAV_LT4  &kp N1
@@ -97,8 +101,12 @@
 #define NAV_RH1  &none
 #define NAV_RH2  &none
 
-#define NAV_LX0  &none
-#define NAV_RX0  &none
+#define NAV_LT5  &none
+#define NAV_LM5  &none
+#define NAV_LB5  &none
+#define NAV_RT5  &none
+#define NAV_RM5  &none
+#define NAV_RB5  &none
 
 /* ── SYM ──────────────────────────────────────────────────────────────────── */
 #define SYM_LT4  &kp LS(N6)
@@ -141,8 +149,62 @@
 #define SYM_RH1  &trans
 #define SYM_RH2  &none
 
-#define SYM_LX0  &none
-#define SYM_RX0  &none
+#define SYM_LT5  &none
+#define SYM_LM5  &none
+#define SYM_LB5  &none
+#define SYM_RT5  &none
+#define SYM_RM5  &none
+#define SYM_RB5  &none
+
+/* ── MOUSE ────────────────────────────────────────────────────────────────── */
+#include <dt-bindings/zmk/mouse.h>
+
+#define MOUSE_LT4  &trans
+#define MOUSE_LT3  &trans
+#define MOUSE_LT2  &trans
+#define MOUSE_LT1  &trans
+#define MOUSE_LT0  &trans
+#define MOUSE_RT0  &mkp LCLK
+#define MOUSE_RT1  &mkp RCLK
+#define MOUSE_RT2  &mkp MCLK
+#define MOUSE_RT3  &none
+#define MOUSE_RT4  &none
+
+#define MOUSE_LM4  &trans
+#define MOUSE_LM3  &trans
+#define MOUSE_LM2  &trans
+#define MOUSE_LM1  &trans
+#define MOUSE_LM0  &trans
+#define MOUSE_RM0  &mmv MOVE_LEFT
+#define MOUSE_RM1  &mmv MOVE_DOWN
+#define MOUSE_RM2  &mmv MOVE_UP
+#define MOUSE_RM3  &mmv MOVE_RIGHT
+#define MOUSE_RM4  &none
+
+#define MOUSE_LB4  &trans
+#define MOUSE_LB3  &trans
+#define MOUSE_LB2  &trans
+#define MOUSE_LB1  &trans
+#define MOUSE_LB0  &trans
+#define MOUSE_RB0  &none
+#define MOUSE_RB1  &msc SCRL_DOWN
+#define MOUSE_RB2  &msc SCRL_UP
+#define MOUSE_RB3  &none
+#define MOUSE_RB4  &none
+
+#define MOUSE_LH2  &trans
+#define MOUSE_LH1  &trans
+#define MOUSE_LH0  &trans
+#define MOUSE_RH0  &mkp LCLK
+#define MOUSE_RH1  &mkp RCLK
+#define MOUSE_RH2  &mkp MCLK
+
+#define MOUSE_LT5  &trans
+#define MOUSE_LM5  &trans
+#define MOUSE_LB5  &trans
+#define MOUSE_RT5  &none
+#define MOUSE_RM5  &none
+#define MOUSE_RB5  &none
 
 /* ── FN ───────────────────────────────────────────────────────────────────── */
 #define FN_LT4   &kp F1
@@ -185,5 +247,116 @@
 #define FN_RH1   &trans
 #define FN_RH2   &trans
 
-#define FN_LX0   &none
-#define FN_RX0   &none
+#define FN_LT5   &none
+#define FN_LM5   &none
+#define FN_LB5   &none
+#define FN_RT5   &none
+#define FN_RM5   &none
+#define FN_RB5   &none
+
+/* ── SYS ──────────────────────────────────────────────────────────────────── */
+#ifdef CONFIG_BT
+#include <dt-bindings/zmk/bt.h>
+#define SYS_LT4  &bt BT_SEL 0
+#define SYS_LT3  &bt BT_SEL 1
+#define SYS_LT2  &bt BT_SEL 2
+#define SYS_LT1  &bt BT_SEL 3
+#define SYS_LT0  &bt BT_SEL 4
+#define SYS_RT0  &bt BT_PRV
+#define SYS_RT4  &bt BT_CLR
+#define SYS_RM0  &bt BT_NXT
+#else
+#define SYS_LT4  &none
+#define SYS_LT3  &none
+#define SYS_LT2  &none
+#define SYS_LT1  &none
+#define SYS_LT0  &none
+#define SYS_RT0  &none
+#define SYS_RT4  &none
+#define SYS_RM0  &none
+#endif
+
+#define SYS_RT1  &none
+#define SYS_RT2  &none
+#define SYS_RT3  &none
+#define SYS_LM4  &none
+#define SYS_LM3  &none
+#define SYS_LM2  &none
+#define SYS_LM1  &none
+#define SYS_LM0  &none
+#define SYS_RM1  &none
+#define SYS_RM2  &none
+#define SYS_RM3  &bootloader
+#define SYS_RM4  &sys_reset
+
+#if defined(BOARD_30)
+#define SYS_LB3  &none
+#define SYS_LB2  &none
+#define SYS_LB1  &none
+#define SYS_RB1  &none
+#define SYS_RB2  &none
+#define SYS_RB3  &none
+#define SYS_LH1  &trans
+#define SYS_LH0  &none
+#define SYS_RH0  &none
+#define SYS_RH1  &trans
+
+#elif defined(BOARD_34)
+#define SYS_LB4  &sys_reset
+#define SYS_LB3  &bootloader
+#define SYS_LB2  &none
+#define SYS_LB1  &none
+#define SYS_LB0  &none
+#define SYS_RB0  &none
+#define SYS_RB1  &none
+#define SYS_RB2  &none
+#define SYS_RB3  &bootloader
+#define SYS_RB4  &sys_reset
+#define SYS_LH1  &trans
+#define SYS_LH0  &none
+#define SYS_RH0  &none
+#define SYS_RH1  &trans
+
+#elif defined(BOARD_36)
+#define SYS_LB4  &sys_reset
+#define SYS_LB3  &bootloader
+#define SYS_LB2  &none
+#define SYS_LB1  &none
+#define SYS_LB0  &none
+#define SYS_RB0  &none
+#define SYS_RB1  &none
+#define SYS_RB2  &none
+#define SYS_RB3  &bootloader
+#define SYS_RB4  &sys_reset
+#define SYS_LH2  &trans
+#define SYS_LH1  &none
+#define SYS_LH0  &none
+#define SYS_RH0  &none
+#define SYS_RH1  &none
+#define SYS_RH2  &trans
+
+#elif defined(BOARD_42)
+#define SYS_LB4  &sys_reset
+#define SYS_LB3  &bootloader
+#define SYS_LB2  &none
+#define SYS_LB1  &none
+#define SYS_LB0  &none
+#define SYS_RB0  &none
+#define SYS_RB1  &none
+#define SYS_RB2  &none
+#define SYS_RB3  &bootloader
+#define SYS_RB4  &sys_reset
+#define SYS_LH2  &trans
+#define SYS_LH1  &none
+#define SYS_LH0  &none
+#define SYS_RH0  &none
+#define SYS_RH1  &none
+#define SYS_RH2  &trans
+#endif
+
+#define SYS_LT5  &none
+#define SYS_LM5  &none
+#define SYS_LB5  &none
+#define SYS_RT5  &none
+#define SYS_RM5  &none
+#define SYS_RB5  &none

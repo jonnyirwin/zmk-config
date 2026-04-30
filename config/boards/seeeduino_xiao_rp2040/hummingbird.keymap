@@ -10,19 +10,11 @@
 #define NAV 1
 #define SYM 2
 #define FN  3
-#define SYS 4
+#define SYS   4
+#define MOUSE 5
 
 #define BOARD_30
 
 #include "../../includes/layers.h"
-
-#define LAYER_SYS \
-    &none       &none       &none       &none       &none               \
-    &none       &none       &none       &none       &none               \
-    &none       &none       &none       &none       &none               \
-    &none       &none       &none       &bootloader &sys_reset          \
-                &none       &none       &none       \
-                            &none       &none       &none               \
-                &trans      &none       &none       &trans
 
 #include "../../includes/base_layers.dtsi"

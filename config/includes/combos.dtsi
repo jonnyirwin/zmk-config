@@ -16,8 +16,8 @@
  *   combo_bar { key-positions = <LH2 LH1>; bindings = <&bar>; };
  *   #endif
  *
- *   #if defined(LX0)          // BOARD_42 only
- *   combo_baz { key-positions = <LX0 LM4>; bindings = <&baz>; };
+ *   #if defined(LT5)          // BOARD_42 only
+ *   combo_baz { key-positions = <LT5 LM4>; bindings = <&baz>; };
  *   #endif
  */
 
@@ -86,6 +86,11 @@
         };
 
         /* ── Layer combos ────────────────────────────────────────────────── */
+        combo_mouse {
+            key-positions = <LM1 LB1>;
+            bindings = <&tog MOUSE>;
+            require-prior-idle-ms = <150>;
+        };
         combo_fn {
             key-positions = <FN_COMBO_KEYS>;
             bindings = <&mo FN>;

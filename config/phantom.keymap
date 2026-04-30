@@ -5,25 +5,15 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
-
 #define CK  0
 #define NAV 1
 #define SYM 2
 #define FN  3
-#define SYS 4
+#define SYS   4
+#define MOUSE 5
 
 #define BOARD_30
 
 #include "includes/layers.h"
-
-#define LAYER_SYS \
-    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 \
-    &bt BT_PRV &none       &none       &none       &bt BT_CLR           \
-    &none       &none       &none       &none       &none               \
-    &bt BT_NXT  &none       &none       &bootloader &sys_reset          \
-                &none       &none       &none       \
-                            &none       &none       &none               \
-                &trans      &none       &none       &trans
 
 #include "includes/base_layers.dtsi"

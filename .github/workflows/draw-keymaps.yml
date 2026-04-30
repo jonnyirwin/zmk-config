@@ -1,0 +1,63 @@
+name: Draw Keymaps
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'config/**'
+  workflow_dispatch:
+
+jobs:
+  draw:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install keymap-drawer
+        run: pipx install keymap-drawer
+
+      - name: Parse and draw keymaps
+        run: |
+          # cradio — 34-key split (layout known)
+          keymap parse -z config/cradio.keymap -o /tmp/cradio.yaml
+          keymap draw /tmp/cradio.yaml -o cradio_keymap.svg
+
+          # cheapino — 36-key split (ortho layout: 5 cols, 3 rows, 3 thumbs)
+          keymap parse -z config/cheapino.keymap -o /tmp/cheapino.yaml
+          python3 - <<'EOF'
+          import yaml
+          with open('/tmp/cheapino.yaml') as f:
+              data = yaml.safe_load(f)
+          data['layout'] = {'ortho_layout': {'split': True, 'rows': 3, 'columns': 5, 'thumbs': 3}}
+          with open('/tmp/cheapino_fixed.yaml', 'w') as f:
+              yaml.dump(data, f, allow_unicode=True)
+          EOF
+          keymap draw /tmp/cheapino_fixed.yaml -o cheapino_keymap.svg
+
+          # phantom — 30-key split, reuse berylline layout (same form factor)
+          keymap parse -z config/phantom.keymap -o /tmp/phantom.yaml
+          sed 's/zmk_keyboard: phantom/zmk_keyboard: berylline/' /tmp/phantom.yaml > /tmp/phantom_fixed.yaml
+          keymap draw /tmp/phantom_fixed.yaml -o phantom_keymap.svg
+
+          # berylline — 30-key split (layout known)
+          keymap parse -z config/berylline.keymap -o /tmp/berylline.yaml
+          keymap draw /tmp/berylline.yaml -o berylline_keymap.svg
+
+          # hummingbird wired (rp2040) — 30-key unibody (layout known)
+          keymap parse -z config/boards/seeeduino_xiao_rp2040/hummingbird.keymap -o /tmp/hummingbird_wired.yaml
+          keymap draw /tmp/hummingbird_wired.yaml -o hummingbird_wired_keymap.svg
+
+          # hummingbird wireless (ble) — 30-key unibody (layout known)
+          keymap parse -z config/boards/seeeduino_xiao_ble/hummingbird.keymap -o /tmp/hummingbird_wireless.yaml
+          keymap draw /tmp/hummingbird_wireless.yaml -o hummingbird_wireless_keymap.svg
+
+      - name: Commit updated SVGs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add *_keymap.svg
+          git diff --cached --quiet || git commit -m "chore: update keymap diagrams"
+          git push

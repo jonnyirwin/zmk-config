@@ -164,20 +164,21 @@
     24  25  26  27  28  29     30  31  32  33  34  35
                     36  37  38  39  40  41              */
 
-#define LX0  0    /* extra outer left column */
-
+#define LT5  0    /* extra outer left column, top row */
 #define LT4  1
 #define LT3  2
 #define LT2  3
 #define LT1  4
 #define LT0  5
 
+#define LM5  12   /* extra outer left column, home row */
 #define LM4  13
 #define LM3  14
 #define LM2  15
 #define LM1  16
 #define LM0  17
 
+#define LB5  24   /* extra outer left column, bottom row */
 #define LB4  25
 #define LB3  26
 #define LB2  27
@@ -188,20 +189,21 @@
 #define LH1  37
 #define LH0  38
 
-#define RX0  11   /* extra outer right column */
-
+#define RT5  11   /* extra outer right column, top row */
 #define RT0  6
 #define RT1  7
 #define RT2  8
 #define RT3  9
 #define RT4  10
 
+#define RM5  23   /* extra outer right column, home row */
 #define RM0  18
 #define RM1  19
 #define RM2  20
 #define RM3  21
 #define RM4  22
 
+#define RB5  35   /* extra outer right column, bottom row */
 #define RB0  30
 #define RB1  31
 #define RB2  32

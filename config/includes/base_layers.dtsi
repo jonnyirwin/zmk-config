@@ -3,8 +3,8 @@
  *
  * The including file must define before this #include:
  *   - BOARD_30 / BOARD_34 / BOARD_36 / BOARD_42
- *   - Layer index macros: CK, NAV, SYM, FN, SYS
- *   - Layer binding macros: LAYER_CK, LAYER_NAV, LAYER_SYM, LAYER_FN, LAYER_SYS
+ *   - Layer index macros: CK, NAV, SYM, FN, SYS, MOUSE
+ *   - Layer binding macros: LAYER_CK, LAYER_NAV, LAYER_SYM, LAYER_FN, LAYER_SYS, LAYER_MOUSE
  *     (each expands to the raw list of &kp / &mo / &bt bindings for that board)
  */
 
@@ -38,6 +38,11 @@
         sys_layer {
             display-name = "Sys";
             bindings = < LAYER_SYS >;
+        };
+
+        mouse_layer {
+            display-name = "Mouse";
+            bindings = < LAYER_MOUSE >;
         };
     };
 };
