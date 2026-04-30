@@ -3,4 +3,7 @@ if SHIELD_CHEAPINO
 config ZMK_KEYBOARD_NAME
     default "Cheapino"
 
+config ZMK_BOARD_COMPAT
+    default y
+
 endif
