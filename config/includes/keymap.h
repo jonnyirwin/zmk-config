@@ -1,5 +1,12 @@
 #pragma once
 
+#define CK    0
+#define NAV   1
+#define SYM   2
+#define FN    3
+#define SYS   4
+#define MOUSE 5
+
 /*
  * Canonical keymap — one binding per (layer, position).
  *

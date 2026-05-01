@@ -3,11 +3,10 @@
  *
  * The including file must define before this #include:
  *   - BOARD_30 / BOARD_34 / BOARD_36 / BOARD_42
- *   - Layer index macros: CK, NAV, SYM, FN, SYS, MOUSE
- *   - Layer binding macros: LAYER_CK, LAYER_NAV, LAYER_SYM, LAYER_FN, LAYER_SYS, LAYER_MOUSE
- *     (each expands to the raw list of &kp / &mo / &bt bindings for that board)
  */
 
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
 #include "key_positions.h"
 #include "combos.dtsi"
 
