@@ -258,7 +258,7 @@
 
 /* ── SYS ──────────────────────────────────────────────────────────────────── */
 #include <dt-bindings/zmk/outputs.h>
-#ifdef CONFIG_BT
+#ifdef CONFIG_ZMK_BLE
 #include <dt-bindings/zmk/bt.h>
 #define SYS_LT4  &bt BT_SEL 0
 #define SYS_LT3  &bt BT_SEL 1
@@ -277,7 +277,7 @@
 #define SYS_RT0  &none
 #define SYS_RT4  &none
 #define SYS_RM0  &none
-#endif
+#endif /* CONFIG_ZMK_BLE */
 
 #define SYS_RT1  &none
 #define SYS_RT2  &none
