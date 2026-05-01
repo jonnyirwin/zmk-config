@@ -13,6 +13,7 @@
 #define MOUSE 5
 
 #define BOARD_34
+#define ZMK_HAS_BLE
 
 #include "includes/layers.h"
 
