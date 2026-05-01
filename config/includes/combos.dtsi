@@ -88,7 +88,7 @@
         /* ── Layer combos ────────────────────────────────────────────────── */
         combo_mouse {
             key-positions = <LM1 LB1>;
-            bindings = <&tog MOUSE>;
+            bindings = <&mo MOUSE>;
             require-prior-idle-ms = <150>;
         };
         combo_fn {
