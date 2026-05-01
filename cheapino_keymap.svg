@@ -325,8 +325,7 @@ path.combo {
 <rect rx="6" ry="6" x="196" y="99" width="28" height="26" class="combo"/>
 <a href="#Mouse">
 <text x="210" y="112" class="combo tap layer-activator">Mouse</text>
-</a><text x="210" y="123" class="combo hold">toggle</text>
-</g>
+</a></g>
 <g class="combo combopos-13">
 <rect rx="6" ry="6" x="406" y="99" width="28" height="26" class="combo"/>
 <a href="#Fn">
@@ -523,8 +522,7 @@ path.combo {
 <rect rx="6" ry="6" x="196" y="99" width="28" height="26" class="combo"/>
 <a href="#Mouse">
 <text x="210" y="112" class="combo tap layer-activator">Mouse</text>
-</a><text x="210" y="123" class="combo hold">toggle</text>
-</g>
+</a></g>
 <g class="combo combopos-13">
 <rect rx="6" ry="6" x="406" y="99" width="28" height="26" class="combo"/>
 <a href="#Fn">
@@ -598,9 +596,8 @@ path.combo {
 <rect rx="6" ry="6" x="-28" y="-26" width="56" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(210, 84)" class="key trans keypos-13">
-<rect rx="6" ry="6" x="-28" y="-26" width="56" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(210, 84)" class="key held keypos-13">
+<rect rx="6" ry="6" x="-28" y="-26" width="56" height="52" class="key held"/>
 </g>
 <g transform="translate(270, 84)" class="key trans keypos-14">
 <rect rx="6" ry="6" x="-28" y="-26" width="56" height="52" class="key trans"/>
@@ -645,9 +642,8 @@ path.combo {
 <rect rx="6" ry="6" x="-28" y="-26" width="56" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(210, 140)" class="key trans keypos-23">
-<rect rx="6" ry="6" x="-28" y="-26" width="56" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(210, 140)" class="key held keypos-23">
+<rect rx="6" ry="6" x="-28" y="-26" width="56" height="52" class="key held"/>
 </g>
 <g transform="translate(270, 140)" class="key trans keypos-24">
 <rect rx="6" ry="6" x="-28" y="-26" width="56" height="52" class="key trans"/>
@@ -756,8 +752,7 @@ path.combo {
 <rect rx="6" ry="6" x="196" y="99" width="28" height="26" class="combo"/>
 <a href="#Mouse">
 <text x="210" y="112" class="combo tap layer-activator">Mouse</text>
-</a><text x="210" y="123" class="combo hold">toggle</text>
-</g>
+</a></g>
 <g class="combo combopos-13">
 <rect rx="6" ry="6" x="406" y="99" width="28" height="26" class="combo"/>
 <a href="#Fn">
@@ -965,8 +960,7 @@ path.combo {
 <rect rx="6" ry="6" x="196" y="99" width="28" height="26" class="combo"/>
 <a href="#Mouse">
 <text x="210" y="112" class="combo tap layer-activator">Mouse</text>
-</a><text x="210" y="123" class="combo hold">toggle</text>
-</g>
+</a></g>
 <g class="combo combopos-13">
 <rect rx="6" ry="6" x="406" y="99" width="28" height="26" class="combo"/>
 <a href="#Fn">
@@ -1173,8 +1167,7 @@ path.combo {
 <rect rx="6" ry="6" x="196" y="99" width="28" height="26" class="combo"/>
 <a href="#Mouse">
 <text x="210" y="112" class="combo tap layer-activator">Mouse</text>
-</a><text x="210" y="123" class="combo hold">toggle</text>
-</g>
+</a></g>
 <g class="combo combopos-13">
 <rect rx="6" ry="6" x="406" y="99" width="28" height="26" class="combo"/>
 <a href="#Fn">
@@ -1363,8 +1356,7 @@ path.combo {
 <rect rx="6" ry="6" x="196" y="99" width="28" height="26" class="combo"/>
 <a href="#Mouse">
 <text x="210" y="112" class="combo tap layer-activator">Mouse</text>
-</a><text x="210" y="123" class="combo hold">toggle</text>
-</g>
+</a></g>
 <g class="combo combopos-13">
 <rect rx="6" ry="6" x="406" y="99" width="28" height="26" class="combo"/>
 <a href="#Fn">
