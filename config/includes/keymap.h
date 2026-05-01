@@ -257,6 +257,7 @@
 #define FN_RB5   &none
 
 /* ── SYS ──────────────────────────────────────────────────────────────────── */
+#include <dt-bindings/zmk/outputs.h>
 #ifdef CONFIG_BT
 #include <dt-bindings/zmk/bt.h>
 #define SYS_LT4  &bt BT_SEL 0
@@ -286,7 +287,7 @@
 #define SYS_LM2  &none
 #define SYS_LM1  &none
 #define SYS_LM0  &none
-#define SYS_RM1  &none
+#define SYS_RM1  &out OUT_TOG
 #define SYS_RM2  &none
 #define SYS_RM3  &bootloader
 #define SYS_RM4  &sys_reset
