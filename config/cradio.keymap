@@ -2,10 +2,7 @@
  * Cradio keymap — 34-key wireless split.
  * SPDX-License-Identifier: MIT
  */
-
 #define BOARD_34
 #define ZMK_HAS_BLE
-
 #include "includes/layers.h"
-
 #include "includes/base_layers.dtsi"

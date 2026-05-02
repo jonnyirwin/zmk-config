@@ -3,9 +3,6 @@
  * RJ45 connectors extend the matrix across both halves; no split comms needed.
  * SPDX-License-Identifier: MIT
  */
-
 #define BOARD_36
-
 #include "includes/layers.h"
-
 #include "includes/base_layers.dtsi"

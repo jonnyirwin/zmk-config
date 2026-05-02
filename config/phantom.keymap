@@ -2,10 +2,7 @@
  * Phantom keymap — 30-key wireless split.
  * SPDX-License-Identifier: MIT
  */
-
 #define BOARD_30
 #define ZMK_HAS_BLE
-
 #include "includes/layers.h"
-
 #include "includes/base_layers.dtsi"

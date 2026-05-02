@@ -2,9 +2,6 @@
  * Hummingbird keymap — 30-key (XIAO RP2040 wired or XIAO BLE wireless).
  * SPDX-License-Identifier: MIT
  */
-
 #define BOARD_30
-
 #include "includes/layers.h"
-
 #include "includes/base_layers.dtsi"
