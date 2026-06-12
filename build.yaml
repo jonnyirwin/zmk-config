@@ -49,4 +49,9 @@ include:
   - board: nice_nano//zmk
     shield: berylline_right
     artifact-name: berylline_right_standalone
+  - board: xiao_ble//zmk
+    shield: eidolon_left
+  - board: xiao_ble//zmk
+    shield: eidolon_right
+    
 

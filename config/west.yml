@@ -38,5 +38,8 @@ manifest:
     - name: prospector-zmk-module
       remote: carrefinho
       revision: feat/new-status-screens
+    - name: zmk-keyboard-eidolon
+      remote: jonnyirwin
+      revision: main
   self:
     path: config
