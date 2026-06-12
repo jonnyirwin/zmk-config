@@ -50,8 +50,8 @@ include:
     shield: berylline_right
     artifact-name: berylline_right_standalone
   - board: xiao_ble//zmk
-    shield: eidolon_left
+    shield: eidolon_left rgbled_adapter
   - board: xiao_ble//zmk
-    shield: eidolon_right
+    shield: eidolon_right rgbled_adapter
     
 
