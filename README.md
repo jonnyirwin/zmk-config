@@ -10,6 +10,7 @@ Colemak-DH keymaps for my split keyboards, built with [ZMK firmware](https://zmk
 | [Cheapino](https://github.com/tompi/cheapino) | 36 | Wired |
 | [Phantom](https://github.com/davidphilipbarr/phantom) | 30 | Wireless (nice!nano) |
 | [Berylline](https://github.com/jcmkk3/trochilidae) | 30 | Wireless split (nice!nano + dongle) |
+| [Eidolon](https://github.com/jonnyirwin/eidolon) | 30 | Wireless split (XIAO BLE) |
 | [Rufous](https://github.com/jcmkk3/trochilidae) | 30 | Wired (XIAO RP2040) or Wireless (XIAO BLE) |
 
 ## Cradio keymap
@@ -23,6 +24,9 @@ Colemak-DH keymaps for my split keyboards, built with [ZMK firmware](https://zmk
 
 ## Berylline keymap
 !["Berylline keymap"](berylline_keymap.svg)
+
+## Eidolon keymap
+!["Eidolon keymap"](eidolon_keymap.svg)
 
 ## Rufous (wired) keymap
 !["Rufous wired keymap"](hummingbird_wired_keymap.svg)

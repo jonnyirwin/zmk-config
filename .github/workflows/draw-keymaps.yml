@@ -42,6 +42,11 @@ jobs:
           sed 's/zmk_keyboard: phantom/zmk_keyboard: berylline/' /tmp/phantom.yaml > /tmp/phantom_fixed.yaml
           keymap draw /tmp/phantom_fixed.yaml -o phantom_keymap.svg
 
+          # eidolon — 30-key wireless split, reuse berylline layout (same form factor)
+          keymap parse -z config/eidolon.keymap -o /tmp/eidolon.yaml
+          sed 's/zmk_keyboard: eidolon/zmk_keyboard: berylline/' /tmp/eidolon.yaml > /tmp/eidolon_fixed.yaml
+          keymap draw /tmp/eidolon_fixed.yaml -o eidolon_keymap.svg
+
           # berylline — 30-key split (layout known)
           keymap parse -z config/berylline.keymap -o /tmp/berylline.yaml
           keymap draw /tmp/berylline.yaml -o berylline_keymap.svg
